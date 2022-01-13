@@ -7,6 +7,7 @@ const count = ref(0)
 </script>
 
 <template>
+  <h1>测试</h1>
   <h1>{{ msg }}</h1>
 
   <p>
