@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
+import { ref, onMounted  } from 'vue'
+import { zzz } from '../api/api';
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+onMounted(()=>{
+  zzz({});
+})
 </script>
 
 <template>
