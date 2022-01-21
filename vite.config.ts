@@ -5,6 +5,6 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
    define: {
-    'process.env': {VUE_APP_BASE_URL:'http://120.76.240.57:7878'}
+    'process.env': {VUE_APP_BASE_URL:'http://120.76.240.57:8005'}
   }
 })
