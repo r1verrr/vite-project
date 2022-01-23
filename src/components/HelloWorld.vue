@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import { ref, onMounted  } from 'vue'
+import { ElMessage } from 'element-plus'
 import { zzz } from '../api/api';
 defineProps<{ msg: string }>()
 
 const count = ref(0)
 onMounted(()=>{
-  zzz({});
+  zzz({}).then((res)=>{
+     ElMessage.warning(res.data);
+    console.log(res)
+  });
 })
 </script>
 
