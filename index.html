@@ -11,4 +11,18 @@
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
+  <script>
+    const MyHelperObject = {
+      doSomething() {
+        console.log(this, "111111111");
+      },
+      name: "111",
+      foo: function () {
+        console.log("22222");
+      },
+    };
+    console.log(MyHelperObject, "MyHelperObject");
+    MyHelperObject.doSomething();
+    MyHelperObject.foo();
+  </script>
 </html>
